@@ -29,5 +29,5 @@ You can click the Preview link to take a look at your changes.
  <!--- [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mintae-kim-b1a627187/)](https://www.linkedin.com/in/mintae-kim-b1a627187/)
   [![Notion Profile Badge](https://img.shields.io/badge/-notion-black?style=flat-square&logo=notion&logoColor=white&link=https://www.notion.so/connor2doc/927888a45c604213866e33931cd06686)](https://connor2doc.notion.site/Connor-Library-v2-028186efde114d2a90150e786dcc6cb5)--->
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=14km&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=korsua&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
   </div>
