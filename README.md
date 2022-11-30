@@ -30,5 +30,5 @@ You can click the Preview link to take a look at your changes.
   [![Notion Profile Badge](https://img.shields.io/badge/-notion-black?style=flat-square&logo=notion&logoColor=white&link=https://www.notion.so/connor2doc/927888a45c604213866e33931cd06686)](https://connor2doc.notion.site/Connor-Library-v2-028186efde114d2a90150e786dcc6cb5)--->
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=korsua&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=백준아이디)](https://solved.ac/suby00/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=suby00)](https://solved.ac/suby00/)
   </div>
