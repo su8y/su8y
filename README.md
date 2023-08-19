@@ -17,17 +17,29 @@ Hi there
 **soft skill**
 * System Design
 * Problem solving
-  <div align=left>
-
-## My Log
+<div align=left>
+  
+<details>
+<summary><h2>My Log</h2></summary>
+<div markdown=1>
+  
 * 2019 ~ 2023-06 (경민대학교 컴퓨터소프트웨어학과)
 
 * 2023-07 ~ (JBT 개발본부)
+</div>
 
-## Project
+</details>
+
+<details>
+<summary><h2>Project</h2></summary>
+<div markdown=1>
+  
 * KM GameWorld
 * KM Kiosk
 * Mung Application
 * POI Project
+</div>
+
+</details>
  <!--- [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mintae-kim-b1a627187/)](https://www.linkedin.com/in/mintae-kim-b1a627187/)
   [![Notion Profile Badge](https://img.shields.io/badge/-notion-black?style=flat-square&logo=notion&logoColor=white&link=https://www.notion.so/connor2doc/927888a45c604213866e33931cd06686)](https://connor2doc.notion.site/Connor-Library-v2-028186efde114d2a90150e786dcc6cb5)--->
