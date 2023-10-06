@@ -7,16 +7,9 @@ You can click the Preview link to take a look at your changes.
 [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:k.bsa0530@gmail.com)](mailto:k.bsa0530@gmail.com)
 [![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=suby00)](https://solved.ac/suby00/)
 
-Hi there
+Hi there !
 ## Favorite Skills
-**hard skill**
-* Spring
-* Spring Data JPA & RDBMS
-* Mock Testing
-
-**soft skill**
-* System Design
-* Problem solving
+DDD, OOP, RDMBS, Architecture Design, Write Documents
 <div align=left>
   
 <details>
