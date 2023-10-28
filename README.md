@@ -18,7 +18,7 @@ DDD, OOP, RDMBS, Architecture Design, Write Documents
   
 * 2019 ~ 2023-06 (경민대학교 컴퓨터소프트웨어학과)
 
-* 2023-07 ~ (JBT 개발본부)
+* 2023-07 ~ (JBT 개발본부 인턴)
 </div>
 
 </details>
