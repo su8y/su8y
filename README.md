@@ -6,6 +6,7 @@ You can click the Preview link to take a look at your changes.
 ## Suby 
 [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:k.bsa0530@gmail.com)](mailto:k.bsa0530@gmail.com)
 [![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=suby00)](https://solved.ac/suby00/)
+[![LeetCode user su8y](https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=leetcode.com&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fsu8y&logo=leetcode&logoColor=yellow)](https://leetcode.com/su8y/)
 
 Hi there !
 
