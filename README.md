@@ -3,28 +3,29 @@
 korsua/korsua is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
-## Suby 
-[![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:k.bsa0530@gmail.com)](mailto:k.bsa0530@gmail.com)
-[![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=suby00)](https://solved.ac/suby00/)
-[![LeetCode user su8y](https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=leetcode.com&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fsu8y&logo=leetcode&logoColor=yellow)](https://leetcode.com/su8y/)
+## Suby [![Gmail Badge](https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:k.bsa0530@gmail.com)](mailto:k.bsa0530@gmail.com) [![Solved.ac 프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=suby00)](https://solved.ac/suby00/) [![LeetCode user su8y](https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=leetcode.com&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fsu8y&logo=leetcode&logoColor=yellow)](https://leetcode.com/su8y/)
 
-Hi there !
+### Introduction
+I am a developer dedicated to adhering to the principles of Clean Code and Object-Oriented Programming (OOP). My approach emphasizes a clear understanding of the project’s purpose and business objectives before engaging with technical solutions. I consistently focus on addressing sustainable challenges that drive long-term impact, rather than prioritizing specific technologies for their own sake.
 
-## I am...
-* Value the principles of Clean Code and OOP.
-* Understand the project purpose and business context.
-* Choose sustainable issues
-* Focus on issues rather than technology.
-* Rather than baseless trust, the test code
+Additionally, I believe that test-driven development fosters trust and reliability in the codebase, supporting high-quality deliverables through verification rather than assumption.
 
-## Favorite Skills
-* Clean Code, DDD, OOP, RDMBS, Architecture Design, Write Documents
-<div align=left>
+### Key Skills
+* Clean Code methodologies
+* Domain-Driven Design (DDD)
+* Object-Oriented Programming (OOP)
+* Relational Database Management Systems (RDBMS)
+* Architecture Design
+* technical Documentation
+  
+### Experience
+* 2019 - 2023-06: Bachelor’s degree in Computer Software, Kyungmin University
+* 2023-07 - 2023-12: Internship at JBT, Development Headquarters Team
+* 2024-01 - Present: Core Development Team, JBT
 
-## My Logs
-* 2019 ~ 2023-06 (Kyungmin UV Dept.ComputerSoftware)    
-* 2023-07 ~ 2023-12(JBT. 개발본부팀 Internship)    
-* 2024-01 ~ ing(JBT. Core Development Team)
+I am committed to delivering thoughtful, well-architected solutions that balance technical excellence with a deep understanding of business needs, ensuring lasting value to any team or project.
+
+
 
 <!---
 <details>
