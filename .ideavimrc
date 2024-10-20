@@ -1,0 +1,91 @@
+let mapleader = " "
+
+set nu
+set rnu
+set expandtab
+set autoindent
+set cindent
+set smartcase
+set hlsearch
+set incsearch
+set autoread
+set autowrite
+
+set ideajoin
+set idearefactormode=keep
+
+set mouse=a
+
+" @@@@@@@@ INSTALL PLUGIN @@@@@@@
+set NERDTree
+set multiple-cursors
+set easymotion
+set quickscope
+
+" @@@@@@@@ english auto change @@@@@@@@
+let keep_input_source_in_normal=[ABC]
+let keep_input_source_in_normal=ABC
+set keep-english-in-normal-and-restore-in-insert
+
+" @@@@@@@@@@@ ## Key Mapping ## @@@@@@@@@@@
+
+" @@@@@@@@@ ESSENTIAL @@@@@@@@
+nmap gr <Action>(GotoDeclaration)
+nmap gi <Action>(GotoImplementation)
+nmap gI <Action>(QuickImplementations)
+nmap gl <Action>(QuickJavaDoc)
+nmap K <Action>(ShowHoverInfo)
+nnoremap L gt
+nnoremap H gT
+nnoremap Y y$
+
+" @@@@@@@@ WINDOW @@@@@@@@
+nmap ]e <Action>(GotoNextError)
+nmap [e <Action>(GotoPreviousError)
+nmap <leader>e :NERDTree<CR>
+nmap <leader>/ <Action>(FindInPath)
+nmap <leader>, <Action>(RecentFiles)
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fu <Action>(FindUsages)
+nmap <leader>fc <Action>(GotoClass)
+nmap <leader>fs <Action>(GotoSymbol)
+nmap <leader>ft <Action>(GotoTest)
+
+nmap <leader>cs <Action>(FileStructurePopup)
+nmap <C-/> <Action>(ActivateTerminalToolWindow)
+nmap <leader>bb <Action>(ToggleBookmark)
+
+" @@@@@@@@@@ CODING @@@@@@@@@@@@
+nmap <leader>cA <Action>(Generate)
+nmap <leader>ca <Action>(ShowIntentionActions)
+nmap <leader>cf <Action>(ReformatCode)
+nmap <leader>co <Action>(OptimizeImports)
+nmap <leader>r <Action>(Refactorings.QuickListPopupAction)
+nmap <leader>p <Action>(ParameterInfo)
+
+vmap <leader>cca <Action>(copilot.inlayContextMenu)
+imap <leader>cca <Action>(copilot.inlayContextMenu)
+
+
+" @@@@@@@@@ DEBUGGING @@@@@@@@@@
+nmap <leader>db <Action>(ToggleLineBreakpoint)
+nmap <leader>dc <Action>(DebugClass)
+nmap <leader>dt <Action>(Stop)
+nmap <leader>do <Action>(StepOut)
+nmap <leader>dO <Action>(StepOver)
+nmap <leader>di <Action>(StepInto)
+" nmap <C-k> <Action>(Resume)
+" nmap <C-l> <Action>(ForceStepInto)
+" nmap <leader>cc <Action>(Coverage)
+" nmap <leader>cn <Action>(RunCoverage)
+" nmap <C-k> <Action>(Resume)
+" nmap <C-l> <Action>(ForceStepInto)
+" inoremap <C-;>n <Action>(RunClass )
+" inoremap <C-;>c <Action>(ChooseRunConfiguration )
+
+
+" @@@@@@@@ PLUGIN MULTI CURSOR @@@@@@@@
+map <C-N>  <A-N>
+map <C-P>  <A-P>
+map <C-X>  <A-X>
+map g<C-N> <Action>(SelectAllOccurrences)
