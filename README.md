@@ -19,7 +19,7 @@ Additionally, I believe that test-driven development fosters trust and reliabili
 * technical Documentation
   
 ### Experience
-* 2019 - 2023-06: Bachelor’s degree in Computer Software, Kyungmin University
+* 2019 - 2023-06: 3-year associate degree in Computer Software, Kyungmin University
 * 2023-07 - 2023-12: Internship at JBT, Development Headquarters Team
 * 2024-01 - Present: Core Development Team, JBT
 
