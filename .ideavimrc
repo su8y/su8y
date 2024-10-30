@@ -40,6 +40,8 @@ nnoremap H gT
 nnoremap Y y$
 
 " @@@@@@@@ WINDOW @@@@@@@@
+nmap <leader>qo :tabo<CR>
+
 nmap ]e <Action>(GotoNextError)
 nmap [e <Action>(GotoPreviousError)
 nmap <leader>e :NERDTree<CR>
@@ -56,7 +58,7 @@ nmap <C-/> <Action>(ActivateTerminalToolWindow)
 nmap <leader>bb <Action>(ToggleBookmark)
 
 " @@@@@@@@@@ CODING @@@@@@@@@@@@
-nmap <leader>cA <Action>(Generate)
+nmap <leader>ci <Action>(Generate)
 nmap <leader>ca <Action>(ShowIntentionActions)
 nmap <leader>cf <Action>(ReformatCode)
 nmap <leader>co <Action>(OptimizeImports)
