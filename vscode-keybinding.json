@@ -23,7 +23,7 @@
   /* NerdTree*/
   {
     "key": "escape",
-    "command": "workbench.action.focusFirstEditorGroup",
+    "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminal.active && !textInputFocus"
   },
   {
@@ -38,7 +38,18 @@
   {
     "key": "d",
     "command": "deleteFile",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    "when": "focusedView == 'javaProjectExplorer' && java:serverMode == 'Standard' || filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  /* java projects */
+  /*{
+    "key": "m",
+    "command": "editor.action.showContextMenu",
+    "when": "focusedView == 'javaProjectExplorer' && java:serverMode == 'Standard' || filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },*/
+  {
+    "key": "r",
+    "command": "java.view.package.renameFile",
+    "when": "focusedView == 'javaProjectExplorer' && java:serverMode == 'Standard' || filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
     "key": "a",
@@ -66,5 +77,11 @@
     "key": "ctrl+p",
     "command": "selectPrevCodeAction",
     "when": "codeActionMenuVisible"
+  },
+
+  {
+    "key": "shift+alt+c",
+    "command": "-java.view.package.copyFilePath",
+    "when": ""
   }
 ]
