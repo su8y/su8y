@@ -1,4 +1,12 @@
 [
+  /*
+   toggle panel 
+   */
+  {
+    "key": "escape" /* close 가 동작 안할때마다 추가해준다. */,
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus && !inlineSuggestionVisible && !inlineChatFocused "
+  },
   /* vim show hover */
   {
     "key": "h",
@@ -22,15 +30,6 @@
   },
   /* NerdTree*/
   {
-    "key": "escape",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminal.active && !textInputFocus"
-  },
-  {
-    "key": "ctrl+n",
-    "command": "-workbench.action.files.newUntitledFile"
-  },
-  {
     "key": "r",
     "command": "renameFile",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
@@ -40,12 +39,6 @@
     "command": "deleteFile",
     "when": "focusedView == 'javaProjectExplorer' && java:serverMode == 'Standard' || filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
-  /* java projects */
-  /*{
-    "key": "m",
-    "command": "editor.action.showContextMenu",
-    "when": "focusedView == 'javaProjectExplorer' && java:serverMode == 'Standard' || filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },*/
   {
     "key": "r",
     "command": "java.view.package.renameFile",
@@ -61,27 +54,112 @@
   {
     "key": "ctrl+n",
     "command": "workbench.action.quickOpenSelectNext",
-    "when": "inQuickOpen"
+    "when": "isWindows && inQuickOpen"
   },
   {
     "key": "ctrl+p",
     "command": "workbench.action.quickOpenSelectPrevious",
-    "when": "inQuickOpen"
+    "when": "isWindows && inQuickOpen"
   },
   {
     "key": "ctrl+n",
     "command": "selectNextCodeAction",
-    "when": "codeActionMenuVisible"
+    "when": "isWindows && codeActionMenuVisible"
   },
   {
     "key": "ctrl+p",
     "command": "selectPrevCodeAction",
-    "when": "codeActionMenuVisible"
+    "when": "isWindows && codeActionMenuVisible"
   },
-
   {
-    "key": "shift+alt+c",
-    "command": "-java.view.package.copyFilePath",
-    "when": ""
-  }
+    "key": "ctrl+l",
+    "command": "workbench.action.toggleAuxiliaryBar",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen",
+    "when": "isWindows &&  editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile",
+    "when": "isWindows"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "inlineChat.start",
+    "when": "isWindows && editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "inlineChat.startWithCurrentLine",
+    "when": "isWindows && editorFocus && github.copilot.chat.editor.enableLineTrigger && inlineChatHasProvider && !editorReadonly && !inlineChatVisible"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "workbench.action.terminal.chat.start",
+    "when": "isWindows && terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported"
+  } /* --------------------
+  end window only
+  ------------------------*/,
+  /* mac only*/
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "cmd+h",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-java.view.package.renameFile",
+    "when": "isMac && focusedView == 'javaProjectExplorer' && java:serverMode == 'Standard' || filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "cmd+`",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "isMac && terminal.active"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "isMac && terminal.active"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "isMac && terminal.active"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "editor.action.refactor",
+    "when": "isMac && editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "isMac && editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  } /* --------------------
+   end mac only
+   -----------------------*/
 ]
