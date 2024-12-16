@@ -1,7 +1,7 @@
 [
   /*
-   toggle panel 
-   */
+	 toggle panel 
+	 */
   {
     "key": "escape" /* close 가 동작 안할때마다 추가해준다. */,
     "command": "workbench.action.focusActiveEditorGroup",
@@ -54,60 +54,60 @@
   {
     "key": "ctrl+n",
     "command": "workbench.action.quickOpenSelectNext",
-    "when": "isWindows && inQuickOpen"
+    "when": " isWindows || isLinux && inQuickOpen"
   },
   {
     "key": "ctrl+p",
     "command": "workbench.action.quickOpenSelectPrevious",
-    "when": "isWindows && inQuickOpen"
+    "when": " isWindows || isLinux && inQuickOpen"
   },
   {
     "key": "ctrl+n",
     "command": "selectNextCodeAction",
-    "when": "isWindows && codeActionMenuVisible"
+    "when": " isWindows || isLinux && codeActionMenuVisible"
   },
   {
     "key": "ctrl+p",
     "command": "selectPrevCodeAction",
-    "when": "isWindows && codeActionMenuVisible"
+    "when": " isWindows || isLinux && codeActionMenuVisible"
   },
   {
     "key": "ctrl+l",
     "command": "workbench.action.toggleAuxiliaryBar",
-    "when": "isWindows"
+    "when": " isWindows || isLinux"
   },
   {
     "key": "ctrl+h",
     "command": "workbench.action.toggleSidebarVisibility",
-    "when": "isWindows"
+    "when": " isWindows || isLinux"
   },
   {
     "key": "ctrl+p",
     "command": "workbench.action.quickOpen",
-    "when": "isWindows &&  editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    "when": " isWindows || isLinux &&  editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   },
   {
     "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile",
-    "when": "isWindows"
+    "when": " isWindows || isLinux"
   },
   {
     "key": "ctrl+i",
     "command": "inlineChat.start",
-    "when": "isWindows && editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly"
+    "when": " isWindows || isLinux && editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly"
   },
   {
     "key": "ctrl+i",
     "command": "inlineChat.startWithCurrentLine",
-    "when": "isWindows && editorFocus && github.copilot.chat.editor.enableLineTrigger && inlineChatHasProvider && !editorReadonly && !inlineChatVisible"
+    "when": " isWindows || isLinux && editorFocus && github.copilot.chat.editor.enableLineTrigger && inlineChatHasProvider && !editorReadonly && !inlineChatVisible"
   },
   {
     "key": "ctrl+i",
     "command": "workbench.action.terminal.chat.start",
-    "when": "isWindows && terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported"
+    "when": " isWindows || isLinux && terminalChatAgentRegistered && terminalFocusInAny && terminalHasBeenCreated || terminalChatAgentRegistered && terminalFocusInAny && terminalProcessSupported"
   } /* --------------------
-  end window only
-  ------------------------*/,
+	end window only
+	------------------------*/,
   /* mac only*/
   {
     "key": "cmd+l",
@@ -160,6 +160,6 @@
     "command": "-editor.action.refactor",
     "when": "isMac && editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   } /* --------------------
-   end mac only
-   -----------------------*/
+	 end mac only
+	 -----------------------*/
 ]
