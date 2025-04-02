@@ -1,14 +1,27 @@
 let mapleader = " "
 set nu
 set rnu
+
+set smartindent
 set expandtab
 set autoindent
+
+set ignorecase   " 대소문자 구분 없이 검색
+set smartcase    " 대소문자가 포함되면 대소문자 구분
+set incsearch    " 검색하는 동안 실시간으로 결과 보여줌
+set hlsearch     " 검색 결과 강조
+set nowrapscan   " 검색 범위를 파일 끝까지
+
 set cindent
 set smartcase
-set hlsearch
-set incsearch
 set autoread
 set autowrite
+set clipboard=
+
+set encoding=utf-8     " 파일 인코딩을 UTF-8로 설정
+set fileencoding=utf-8 " 파일 저장 시 인코딩을 UTF-8로 설정
+
+set backspace=indent,eol,start
 
 set ideajoin
 set idearefactormode=keep
@@ -30,16 +43,23 @@ set keep-english-in-normal-and-restore-in-insert
 
 " @@@@@@@@@ ESSENTIAL @@@@@@@@
 nmap gr <Action>(GotoDeclaration)
+nmap gI <Action>(GotoSuperMethod)
 nmap gi <Action>(GotoImplementation)
-nmap gI <Action>(QuickImplementations)
 nmap gl <Action>(QuickJavaDoc)
+vmap gc <Action>(CommentByLineComment)
+nmap gc <Action>(CommentByLineComment)
+nmap zd <Action>(ToggleRenderedDocPresentationForAll)
 nmap K <Action>(ShowHoverInfo)
 nnoremap L gt
 nnoremap H gT
 nnoremap Y y$
+nnoremap <Esc> :nohlsearch<CR><Esc>
+vnoremap <Esc> <Esc>:nohlsearch<CR><Esc>
 
 " @@@@@@@@ WINDOW @@@@@@@@
 nmap <leader>qo :tabo<CR>
+nmap <leader>qh <Action>(CloseAllToTheLeft)
+nmap <leader>ql <Action>(CloseAllToTheRight)
 
 nmap ]e <Action>(GotoNextError)
 nmap [e <Action>(GotoPreviousError)
@@ -64,25 +84,24 @@ nmap <leader>co <Action>(OptimizeImports)
 nmap <leader>r <Action>(Refactorings.QuickListPopupAction)
 nmap <leader>p <Action>(ParameterInfo)
 
-vmap <leader>cca <Action>(copilot.inlayContextMenu)
-imap <leader>cca <Action>(copilot.inlayContextMenu)
-
-
 " @@@@@@@@@ DEBUGGING @@@@@@@@@@
 nmap <leader>db <Action>(ToggleLineBreakpoint)
-nmap <leader>dc <Action>(DebugClass)
+" nmap <leader>dc <Action>(DebugClass)
+nmap <leader>dd <Action>(Debug)
 nmap <leader>dt <Action>(Stop)
 nmap <leader>do <Action>(StepOut)
 nmap <leader>dO <Action>(StepOver)
 nmap <leader>di <Action>(StepInto)
+" build check
 " nmap <C-k> <Action>(Resume)
 " nmap <C-l> <Action>(ForceStepInto)
 " nmap <leader>cc <Action>(Coverage)
 " nmap <leader>cn <Action>(RunCoverage)
 " nmap <C-k> <Action>(Resume)
 " nmap <C-l> <Action>(ForceStepInto)
-" inoremap <C-;>n <Action>(RunClass )
-" inoremap <C-;>c <Action>(ChooseRunConfiguration )
+nmap <leader>dn <Action>(RunClass)
+nmap <leader>dc <Action>(RunToCursor)
+
 
 
 " @@@@@@@@ PLUGIN MULTI CURSOR @@@@@@@@
@@ -90,3 +109,10 @@ map <C-N>  <A-N>
 map <C-P>  <A-P>
 map <C-X>  <A-X>
 map g<C-N> <Action>(SelectAllOccurrences)
+
+" @@@@@@@@ PLUGIN COPLIOT @@@@@@@@
+" inline and goto chat
+nmap <leader>ccs <Action>(copilot.chat.show)
+nmap <leader>cci <Action>(copilot.chat.inline)
+vmap <leader>ccs <Action>(copilot.chat.show)
+vmap <leader>cci <Action>(copilot.chat.inline)
