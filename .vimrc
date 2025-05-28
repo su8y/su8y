@@ -1,5 +1,6 @@
 let mapleader=" "
 
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
@@ -8,21 +9,39 @@ set cindent
 
 set nu
 set rnu
-set foldmethod=syntax
 set mouse=
 set cursorline
+set list
+set listchars=space:·,tab:▸\ ,eol:↴
 
-autocmd BufReadPost * normal zR
 
-nmap L gt
-nmap H gT
-nmap <leader>te :Texplore<CR>
-nmap <leader>le :Lexplore<CR>
-nmap <leader>e :Explore<CR>
-nmap gF :tabe <cfile><CR>
+function! SearchWordInCFiles()
+        let l:word = expand('<cword>')
+        execute 'lvimgrep /' . escape(l:word, '/\') . '/ **/*.c **/*.h **/*.cpp'
+        execute 'normal! <C-o>'
+endfunction
 
-"nnoremap <leader>* viwy:execute ' match Search \@0\ '<CR>:execute ' vertical rightbelow terminal bash -c "grep -rn '@0' --include=\*.{c,h,py,java,cpp} " '<CR>
-"vnoremap <leader>* y:execute ' match Search \@0\ '<CR> :execute ' vertical rightbelow terminal bash -c "grep -rn '@0' --include=\*.{c,h,py,java,cpp} " '<CR>
-" USE cw, ccl, cdo {command}
-nnoremap <leader>* viwy:execute 'vimgrep '@0' * '<CR>:cw<CR>
-vnoremap <leader>* viwy:execute 'vimgrep '@0' * '<CR>:cw<CR>
+function! GrepWord()
+    let l:word = expand('<cword>')
+    execute 'vimgrep /' . escape(l:word, '/\') . '/ **/*.c **/*.h **/*.cpp'
+endfunction
+
+nnoremap L gt
+nnoremap H gT
+nnoremap <leader>te :Texplore<CR>
+nnoremap <leader>le :Lexplore<CR>
+nnoremap <leader>e :Explore<CR>
+nnoremap <leader>qo :tabonly<CR>
+nnoremap gF :tabe <cfile><CR>
+
+nnoremap * :let @/='<C-r><C-w>'<CR>
+
+nnoremap <leader>g* :call GrepWord()<CR><C-o>:cw<CR>
+vnoremap <leader>g* :call GrepWord()<CR><C-o>:cw<CR>
+
+nnoremap <leader>* *:call SearchWordInCFiles()<CR><C-o>:lop<CR>
+vnoremap <leader>* *:call SearchWordInCFiles()<CR><C-o>:lop<CR>
+
+" Build
+nnoremap <F10> :w<CR>:vert terminal sh -c "gcc % -o %< && ./%< 2>&1"<CR>
+
