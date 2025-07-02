@@ -10,18 +10,24 @@ You can click the Preview link to take a look at your changes.
 [![LeetCode user su8y](https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=leetcode.com&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fsu8y&logo=leetcode&logoColor=yellow)](https://leetcode.com/su8y/)
 
 ### Summary
-I am a developer who deeply understands business objectives and provides sustainable solutions based on Clean Code, OOP, DDD, and TDD principles. My focus is on long-term impact rather than technology itself, and I strive for highly reliable deliverables through verified code quality.
+I am a back-end developer who deeply understands business objectives and provides sustainable solutions based on Clean Code, OOP, DDD, and TDD principles. My focus is on long-term impact rather than technology itself, and I strive for highly reliable deliverables through verified code quality.
 
 I am committed to delivering thoughtful, well-architected solutions that balance technical excellence with a deep understanding of business needs, ensuring lasting value to any team or project.
 
-### Key Skills
-* Object-Oriented Programming (OOP)
-* Clean Code methodologies
-* Domain-Driven Design (DDD)
-* Test-Driven Development(TDD)
-* Relational Database Management Systems (RDBMS)
-* Architecture Design
-* technical Documentation
+### Skills
+- Object-Oriented Programming (OOP): Designs and builds flexible, extensible systems through effective object-oriented principles.
+
+- Clean Code methodologies: Crafts readable and maintainable code, enhancing development productivity and system longevity.
+
+- Domain-Driven Design (DDD): Models complex business domains to design solutions that precisely align with real-world problems.
+
+- Test-Driven Development (TDD): Ensures robust, bug-free code through a disciplined test-driven development process.
+
+- Relational Database Management Systems (RDBMS): Optimizes relational databases to guarantee stable and efficient data management.
+
+- Architecture Design: Designs scalable architectures that prioritize long-term system stability and performance.
+
+- Technical Documentation: Creates clear and precise technical documentation to facilitate knowledge sharing and collaboration.
   
 ### Experience
 * 2023-07 - 2023-12: Backend developer, Internship Development Team, JBT
