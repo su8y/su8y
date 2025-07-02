@@ -24,7 +24,8 @@ I am committed to delivering thoughtful, well-architected solutions that balance
 * technical Documentation
   
 ### Experience
-* 2019 - 2023-06: 3-year associate degree in Computer Software, Kyungmin University
 * 2023-07 - 2023-12: Backend developer, Internship Development Team, JBT
 * 2024-01 - Present: Backend developer, Core Development Team, JBT
 
+### Education
+* 2019 - 2023-06: 3-year associate degree in Computer Software, Kyungmin University
