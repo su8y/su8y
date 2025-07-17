@@ -10,7 +10,7 @@ You can click the Preview link to take a look at your changes.
 [![LeetCode user su8y](https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=leetcode.com&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fsu8y&logo=leetcode&logoColor=yellow)](https://leetcode.com/su8y/)
 
 Hello 👋, Welcome to my GitHub profile.  
-I'm Sua Bae, a 3-year backend developer. 
+I'm Sua Bae, a 2-year backend developer. 
 I enjoy solving complex problems with software, prioritizing strong communication, and I favor working with non-blocking code.
 
 - 🇰🇷 Live in Bundang-gu, South Korea.
