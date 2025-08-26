@@ -1,96 +1,52 @@
 let mapleader = " "
-set nu
-set rnu
-set mouse=a
-set smartindent
-set expandtab
-set autoindent
 set ignorecase   " 대소문자 구분 없이 검색
 set smartcase    " 대소문자가 포함되면 대소문자 구분
 set incsearch    " 검색하는 동안 실시간으로 결과 보여줌
 set hlsearch     " 검색 결과 강조
-set nowrapscan   " 검색 범위를 파일 끝까지
-set cindent
-set smartcase
-set autoread
-set autowrite
-set clipboard=
-set backspace=indent,eol,start
-set encoding=utf-8     " 파일 인코딩을 UTF-8로 설정
-set fileencoding=utf-8 " 파일 저장 시 인코딩을 UTF-8로 설정
 
-
-" @@@@@@@@@ PLUGIN @@@@@@@@@@"
 set ideajoin
-set idearefactormode=keep
 set NERDTree
 set multiple-cursors
-set easymotion
-set quickscope
 
-" @@@@@@@@ EN auto change @@@@@@@@
-let keep_input_source_in_normal=[ABC]
-let keep_input_source_in_normal=ABC
-set keep-english-in-normal-and-restore-in-insert
 
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 " @@@@@@@@@ ESSENTIAL @@@@@@@@
-nnoremap L gt
-nnoremap H gT
-nnoremap Y y$
-nnoremap <Esc> :nohl<CR><Esc>
-vnoremap <Esc> <Esc>:nohl<CR><Esc>
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+nmap        <ESC>       :nohl<CR><ESC>
+nnoremap    L           gt
+nnoremap    H           gT
+nnoremap    Y           y$
 
-nmap gr <Action>(GotoDeclaration)
-nmap gI <Action>(GotoSuperMethod)
-nmap gi <Action>(GotoImplementation)
-nmap gl <Action>(QuickJavaDoc)
-vmap gc <Action>(CommentByLineComment)
-nmap gc <Action>(CommentByLineComment)
-nmap zd <Action>(ToggleRenderedDocPresentationForAll)
-nmap K <Action>(ShowHoverInfo)
-
-" @@@@@@@@ WINDOW @@@@@@@@
-nmap <leader>qo :tabo<CR>
-nmap <leader>qh <Action>(CloseAllToTheLeft)
-nmap <leader>ql <Action>(CloseAllToTheRight)
-
-nmap ]e <Action>(GotoNextError)
-nmap [e <Action>(GotoPreviousError)
-nmap <leader>e :NERDTree<CR>
-nmap <leader>/ <Action>(FindInPath)
-nmap <leader>, <Action>(RecentFiles)
-nmap <leader>ff <Action>(GotoFile)
-nmap <leader>fu <Action>(FindUsages)
-nmap <leader>fc <Action>(GotoClass)
-nmap <leader>fs <Action>(GotoSymbol)
-nmap <leader>ft <Action>(GotoTest)
-
-nmap <leader>cs <Action>(FileStructurePopup)
-nmap <C-/> <Action>(ActivateTerminalToolWindow)
-nmap <leader>bb <Action>(ToggleBookmark)
-
-" @@@@@@@@@@ CODING @@@@@@@@@@@@
-nmap <leader>ci <Action>(Generate)
-nmap <leader>ca <Action>(ShowIntentionActions)
-nmap <leader>cf <Action>(ReformatCode)
-nmap <leader>co <Action>(OptimizeImports)
-nmap <leader>r <Action>(Refactorings.QuickListPopupAction)
-nmap <leader>p <Action>(ParameterInfo)
-
-" @@@@@@@@@ DEBUGGING @@@@@@@@@@
-"nmap <leader>dc <Action>(DebugClass)
-nmap <leader>db <Action>(ToggleLineBreakpoint)
-nmap <leader>dd <Action>(Debug)
-nmap <leader>dt <Action>(Stop)
-nmap <leader>dn <Action>(RunClass)
-nmap <leader>dc <Action>(RunToCursor)
-
-" Debug Controls
-nmap <C-k> <Action>(StepOut)
-nmap <C-l> <Action>(StepOver)
-nmap <C-j> <Action>(StepInto)
-nmap <C-h> <Action>(Resume)
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+" @@@@@@@@@ TAB @@@@@@@@@@@@@@
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+nmap        <leader>qo  :tabo<CR>
+nmap        <leader>qh  <Action>(CloseAllToTheLeft)
+nmap        <leader>ql  <Action>(CloseAllToTheRight)
+nmap        <leader>e   :NERDTree<CR>
 
 
-" @@@@@@@@ PLUGIN MULTI CURSOR @@@@@@@@
-map g<A-N> <Action>(SelectAllOccurrences)
+
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+" @@@@@@@@@ Coding @@@@@@@@@@@
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+nmap        K           <Action>(ShowHoverInfo)
+nmap        gr          <Action>(GotoDeclaration)
+nmap        gi          <Action>(GotoImplementation)
+nmap        gI          <Action>(QuickImplementations)
+nmap        ]d          <Action>(GotoNextError)
+nmap        [d          <Action>(GotoPreviousError)
+nmap        mi          <Action>(Generate)
+nmap        ma          <Action>(ShowIntentionActions)
+nmap        <leader>p   <Action>(ParameterInfo)
+nmap        \r          <Action>(ReformatCode)<Action>(OptimizeImports)
+
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+" @@@@@@@@@ Debug @@@@@@@@@@@@
+" @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+nmap        \d          <Action>(DebugClass)
+nmap        \b          <Action>(ToggleLineBreakpoint)
+nmap        <leader>dt  <Action>(Stop)
+nmap        <leader>do  <Action>(StepOut)
+nmap        <leader>dO  <Action>(StepOver)
+nmap        <leader>di  <Action>(StepInto)
