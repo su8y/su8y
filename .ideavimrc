@@ -8,45 +8,50 @@ set ideajoin
 set NERDTree
 set multiple-cursors
 
-
 " @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 " @@@@@@@@@ ESSENTIAL @@@@@@@@
 " @@@@@@@@@@@@@@@@@@@@@@@@@@@@
-nmap        <ESC>       :nohl<CR><ESC>
-nnoremap    L           gt
-nnoremap    H           gT
-nnoremap    Y           y$
+
+nmap    <ESC>       :nohl<CR><ESC>
+inoremap    <ESC>       <ESC><ESC>
+noremap    <C-c>        <ESC>
+vnoremap   <C-c>        "+y
+
+nmap    L           gt
+nmap    H           gT
+nmap    Y           y$
 
 " @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 " @@@@@@@@@ TAB @@@@@@@@@@@@@@
 " @@@@@@@@@@@@@@@@@@@@@@@@@@@@
-nmap        <leader>qo  :tabo<CR>
-nmap        <leader>qh  <Action>(CloseAllToTheLeft)
-nmap        <leader>ql  <Action>(CloseAllToTheRight)
-nmap        <leader>e   :NERDTree<CR>
+nmap    <leader>qo  :tabo<CR>
+nmap    <leader>qh  <Action>(CloseAllToTheLeft)
+nmap    <leader>ql  <Action>(CloseAllToTheRight)
+nmap    <leader>e   :NERDTree<CR>
 
 
 
 " @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 " @@@@@@@@@ Coding @@@@@@@@@@@
 " @@@@@@@@@@@@@@@@@@@@@@@@@@@@
-nmap        K           <Action>(ShowHoverInfo)
-nmap        gr          <Action>(GotoDeclaration)
-nmap        gi          <Action>(GotoImplementation)
-nmap        gI          <Action>(QuickImplementations)
-nmap        ]d          <Action>(GotoNextError)
-nmap        [d          <Action>(GotoPreviousError)
-nmap        mi          <Action>(Generate)
-nmap        ma          <Action>(ShowIntentionActions)
-nmap        <leader>p   <Action>(ParameterInfo)
-nmap        \r          <Action>(ReformatCode)<Action>(OptimizeImports)
+nmap    K           <Action>(ShowHoverInfo)
+nmap    gr          <Action>(GotoDeclaration)
+nmap    gi          <Action>(GotoImplementation)
+nmap    gI          <Action>(QuickImplementations)
+nmap    ]d          <Action>(GotoNextError)
+nmap    [d          <Action>(GotoPreviousError)
+nmap    mi          <Action>(Generate)
+nmap    ma          <Action>(ShowIntentionActions)
+nmap    <leader>p   <Action>(ParameterInfo)
+nmap    \r          <Action>(ReformatCode)<Action>(OptimizeImports)
 
 " @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 " @@@@@@@@@ Debug @@@@@@@@@@@@
 " @@@@@@@@@@@@@@@@@@@@@@@@@@@@
-nmap        \d          <Action>(DebugClass)
-nmap        \b          <Action>(ToggleLineBreakpoint)
-nmap        <leader>dt  <Action>(Stop)
-nmap        <leader>do  <Action>(StepOut)
-nmap        <leader>dO  <Action>(StepOver)
-nmap        <leader>di  <Action>(StepInto)
+nmap    \d          <Action>(DebugClass)
+nmap    \b          <Action>(ToggleLineBreakpoint)
+nmap    \t          <Action>(Stop)
+nmap    <C-l>       <Action>(Resume)
+nmap    <C-k>       <Action>(StepOut)
+nmap    <C-j>       <Action>(StepOver)
+nmap    <C-h>       <Action>(StepInto)
