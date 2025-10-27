@@ -17,3 +17,4 @@ I enjoy solving complex problems with software, prioritizing strong communicatio
 - 🏢 I work at a geospatial company, solving real-world problems using spatial information.
 
 [Su8y Resume!](https://su8y.github.io)  
+[Su8y Blog!](https://suby.tistory.com/)
