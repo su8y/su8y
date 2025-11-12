@@ -20,7 +20,7 @@ I enjoy solving complex problems with software, prioritizing strong communicatio
 
 ### Open Source Contributions
 * **[apache/gravitino](https://github.com/apache/gravitino) (4 Features)**
-  - ✅ improvement(client-java): Correct URL encode path in `alterModelVersion` in `GenericModelCatalog.java` [#7694](https://github.com/apache/gravitino/pull/7694)
-  - ✅ improvement(api): Missing `@Override` annotation to the `hashCode` method of `SparkJobTemplate` [#7653](https://github.com/apache/gravitino/pull/7653)
-  - ✅ improvement(cli): remove duplicate owner in CLI [#7651](https://github.com/apache/gravitino/pull/7651)
-  - ❌ improvement(cli): ADD Error handling and absolute path resolution in gcli.sh [#7620](https://github.com/apache/gravitino/pull/7620)
+  - Correct URL encode path in `alterModelVersion` in `GenericModelCatalog.java` [#7694](https://github.com/apache/gravitino/pull/7694)
+  - Missing `@Override` annotation to the `hashCode` method of `SparkJobTemplate` [#7653](https://github.com/apache/gravitino/pull/7653)
+  - remove duplicate owner in CLI [#7651](https://github.com/apache/gravitino/pull/7651)
+  - ADD Error handling and absolute path resolution in gcli.sh [#7620](https://github.com/apache/gravitino/pull/7620)
