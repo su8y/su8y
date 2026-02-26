@@ -16,6 +16,9 @@
 Building backend systems and experimenting with AI-driven automation.  
 Always happy to chat — feel free to reach out.
 
+
+View Bae Sua's User Manual [📖su8y.github.io/readme](https://su8y.github.io/readme/)
+
 ---
 
 ### Open Source Contributions
